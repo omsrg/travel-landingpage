@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Layout from '@/components/layout/Layout';
 import Hero from '@/components/hero';
 import Services from '@/components/services';
+import Products from '@/components/Products';
 
 const HomePage: NextPage = () => {
 	return (
@@ -17,6 +18,7 @@ const HomePage: NextPage = () => {
 
 			<Hero />
 			<Services />
+			<Products />
 			<div className='h-screen'>lorem30</div>
 		</Layout>
 	);
