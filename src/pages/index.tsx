@@ -6,6 +6,10 @@ import Layout from '@/components/layout/Layout';
 import Hero from '@/components/hero';
 import Services from '@/components/services';
 import Products from '@/components/Products';
+import BannerFirst from '@/components/banner/banner-first';
+import Statistic from '@/components/statistic';
+import Testimonial from '@/components/testimonial';
+import BannerSecond from '@/components/banner/banner-second';
 
 const HomePage: NextPage = () => {
 	return (
@@ -19,7 +23,10 @@ const HomePage: NextPage = () => {
 			<Hero />
 			<Services />
 			<Products />
-			<div className='h-screen'>lorem30</div>
+			<BannerFirst />
+			<Statistic />
+			<Testimonial />
+			<BannerSecond />
 		</Layout>
 	);
 };

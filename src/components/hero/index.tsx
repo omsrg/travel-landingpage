@@ -40,7 +40,6 @@ export default function Hero() {
 				</div>
 
 				<div className='col-span-6'>
-					f
 					<Image src='/img/hero-tavel.png' alt='' objectFit='contain' width={860} height={715} />
 				</div>
 			</div>

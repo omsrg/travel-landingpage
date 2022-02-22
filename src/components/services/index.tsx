@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Section from '../Section';
+import SectionHeading from '../section-heading';
 import Service from './service';
 import ServicesItem from './ServicesItem';
 
@@ -8,11 +9,11 @@ export default function Services() {
 		<Section>
 			<div className='container service-wrapper'>
 				<div className='text-center'>
-					<h2 className='text-xl text-primary-500 uppercase'>What we serve</h2>
-					<h1 className='text-5xl text-tundora-500 my-3'>Top Values For You</h1>
-					<p className='text-xl text-tundora-500 font-opensans'>
-						The best service that will be with you every time
-					</p>
+					<SectionHeading
+						title='what we serve'
+						heading='Top Values For You'
+						subheading='The best service that will be with you every time'
+					/>
 				</div>
 				<ServicesItem>
 					<Service
