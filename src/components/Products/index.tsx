@@ -28,9 +28,12 @@ export default function Products() {
 					<Swiper
 						modules={[Autoplay, Pagination]}
 						spaceBetween={30}
-						slidesPerView={3}
+						slidesPerView={4}
+						loop={true}
+						// slidesPerGroup={3}
+						// loopFillGroupWithBlank={true}
 						autoplay={{
-							delay: 2500,
+							delay: 3000,
 							disableOnInteraction: false,
 						}}
 						pagination={{

@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import { AiFillStar } from 'react-icons/ai';
 import Button from '../Button';
+import Image from 'next/image';
 
 interface IProductCard {
 	category: string;
@@ -12,10 +13,11 @@ interface IProductCard {
 
 export default function ProductCard({ category, price, description, location }: IProductCard) {
 	return (
-		<div className='card-product relative w-[400px] rounded-lg overflow-y-hidden mt-24'>
+		<div className='card-product relative w-[300px] h-[400px] bg-pink-500 rounded-lg overflow-y-hidden mt-24'>
 			{/* eslint-disable-next-line @next/next/no-img-element */}
-			<img src='/img/produk.png' alt='' />
-			<div className='detail-product absolute -bottom-1/2'>
+			{/* <img src='/img/produk.png' alt='' /> */}
+			<Image src='/img/borobudur.jpg' alt='' layout='fill' objectFit='cover' />
+			<div className='detail-product p-4'>
 				<div className='flex justify-between items-center'>
 					<h4 className='px-6 py-1 text-base bg-primary-500 rounded-md text-white font-semibold'>
 						{category}
@@ -25,7 +27,7 @@ export default function ProductCard({ category, price, description, location }: 
 					</h4>
 				</div>
 				<div className='title-card'>
-					<h1 className='text-3xl text-tundora-500'>{location}</h1>
+					<h1 className='text-2xl text-tundora-500'>{location}</h1>
 				</div>
 				<div className='flex gap-3 items-center text-tundora-500'>
 					<div className='star'>

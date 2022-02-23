@@ -3,7 +3,9 @@ import Section from '@/components/Section';
 import { FaCheckSquare } from 'react-icons/fa';
 import Image from 'next/image';
 import FormInput from './form-input/form-input';
-import Input from './form-input/input';
+// import Input from './form-input/input';
+import InputLocation from './form-input/input-location';
+import InputDate from './form-input/input-date';
 
 export default function Hero() {
 	return (
@@ -31,7 +33,8 @@ export default function Hero() {
 					</div>
 
 					<FormInput>
-						<Input />
+						<InputLocation />
+						<InputDate />
 					</FormInput>
 
 					<p className='text-[#ababab] text-sm text-center mt-4'>
@@ -40,7 +43,14 @@ export default function Hero() {
 				</div>
 
 				<div className='col-span-6'>
-					<Image src='/img/hero-tavel.png' alt='' objectFit='contain' width={860} height={715} />
+					<Image
+						src='/img/hero-tavel.png'
+						alt=''
+						objectFit='contain'
+						width={860}
+						height={715}
+						priority={true}
+					/>
 				</div>
 			</div>
 		</Section>
