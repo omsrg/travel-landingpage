@@ -2,10 +2,9 @@ import * as React from 'react';
 import Section from '@/components/Section';
 import { FaCheckSquare } from 'react-icons/fa';
 import Image from 'next/image';
-import FormInput from './form-input/form-input';
-// import Input from './form-input/input';
-import InputLocation from './form-input/input-location';
-import InputDate from './form-input/input-date';
+import FormInput from './FormInput/FormInput';
+import InputLocation from './FormInput/InputLocation';
+import InputDate from './FormInput/InputDate';
 
 export default function Hero() {
 	return (

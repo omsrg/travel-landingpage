@@ -1,15 +1,14 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 
-import Layout from '@/components/layout/Layout';
-import Hero from '@/components/hero';
-import Services from '@/components/services';
+import Layout from '@/components/Layout';
+import Hero from '@/components/Hero';
+import Services from '@/components/Services';
 import Products from '@/components/Products';
-import BannerFirst from '@/components/banner/banner-first';
-import Statistic from '@/components/statistic';
-import Testimonial from '@/components/testimonial';
-import BannerSecond from '@/components/banner/banner-second';
+import BannerFirst from '@/components/Banner/banner-first';
+import Statistic from '@/components/Statistic';
+import Testimonial from '@/components/Testimonial';
+import BannerSecond from '@/components/Banner/banner-second';
 
 const HomePage: NextPage = () => {
 	return (

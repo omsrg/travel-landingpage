@@ -7,7 +7,7 @@ interface IService {
 	icon?: any;
 }
 
-export default function Service({ title, desc, icon }: IService) {
+export default function Product({ title, desc, icon }: IService) {
 	return (
 		<div className='box-service text-center max-w-[300px] relative p-6 py-8'>
 			<i className='bx bx-globe'></i>

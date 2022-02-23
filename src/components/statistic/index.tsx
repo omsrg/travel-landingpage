@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import * as React from 'react';
 import Section from '../Section';
-import SectionHeading from '../section-heading';
-import StatisticNumber from './statistic-number';
+import SectionHeading from '../SectionHeading';
+import StatisticNumber from './StatisticNumber';
 
 export default function Statistic() {
 	return (

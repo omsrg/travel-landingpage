@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { AiFillInstagram, AiOutlineWhatsApp, AiFillTwitterCircle } from 'react-icons/ai';
-import { BsFacebook, BsFillSuitHeartFill } from 'react-icons/bs';
+import { BsFacebook } from 'react-icons/bs';
 import Button from '../Button';
 import UnstyledLink from '../UnstyledLink';
-import FooterColumn from './footer-column';
+import FooterColumn from './FooterColumn';
 
 export default function Footer() {
 	return (

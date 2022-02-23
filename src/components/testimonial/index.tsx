@@ -1,9 +1,15 @@
 import * as React from 'react';
 import Section from '../Section';
-import SectionHeading from '../section-heading';
-import TestimoniSection from './testimoni-section';
-import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
-import Image from 'next/image';
+import SectionHeading from '../SectionHeading';
+import TestimoniSection from './TestimoniSection';
+import TestimoniCard from './TestimoniCard';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/pagination';
 
 export default function Testimonial() {
 	return (
@@ -22,20 +28,44 @@ export default function Testimonial() {
 
 				<div className='col-start-7 col-span-6' data-aos='fade-left '>
 					<TestimoniSection>
-						<div className='bg-white font-opensans px-8 py-6 text-center rounded-lg'>
-							<Image src='/img/testi.png' alt='' width={80} height={80} objectFit='contain' />
-							<div className='relative'>
-								<FaQuoteLeft className='w-4 h-4 absolute top-0' />
-								<p className='p-4 text-tundora-500'>
-									I am very helpful with this trouravel, because we can easily get it all without
-									having to prepare it from afar, and also the price is affordable, highly
-									recommended.
-								</p>
-								<FaQuoteRight className='w-4 h-4 absolute bottom-0 right-0' />
-							</div>
-							<p className='font-semibold text-tundora-500'>by tinyleopard720</p>
-							<p className='text-primary-500'>Traveller</p>
-						</div>
+						<Swiper
+							modules={[Autoplay, Pagination, Navigation]}
+							spaceBetween={30}
+							slidesPerView={1}
+							loop={true}
+							navigation={true}
+							autoplay={{
+								delay: 4000,
+								disableOnInteraction: false,
+							}}
+							pagination={{
+								clickable: true,
+							}}
+						>
+							<SwiperSlide>
+								<TestimoniCard name='Lindsey' job='Traveller' image='/img/person-1.jpg' />
+							</SwiperSlide>
+							<SwiperSlide>
+								<TestimoniCard name='Anitha' job='Influencer' image='/img/person-2.jpg' />
+							</SwiperSlide>
+							<SwiperSlide>
+								<TestimoniCard
+									name='Jonathan Larry'
+									job='Product Manager'
+									image='/img/person-3.jpg'
+								/>
+							</SwiperSlide>
+							<SwiperSlide>
+								<TestimoniCard
+									name='Oliver Braithwaite'
+									job='Photographer'
+									image='/img/person-4.jpg'
+								/>
+							</SwiperSlide>
+							<SwiperSlide>
+								<TestimoniCard name='Jelitha Amira' job='Traveller' image='/img/person-5.jpg' />
+							</SwiperSlide>
+						</Swiper>
 					</TestimoniSection>
 				</div>
 			</div>

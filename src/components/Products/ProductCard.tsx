@@ -9,14 +9,19 @@ interface IProductCard {
 	price: number;
 	location: string;
 	description: string;
+	image: string;
 }
 
-export default function ProductCard({ category, price, description, location }: IProductCard) {
+export default function ProductCard({
+	category,
+	price,
+	description,
+	location,
+	image,
+}: IProductCard) {
 	return (
-		<div className='card-product relative w-[300px] h-[400px] bg-pink-500 rounded-lg overflow-y-hidden mt-24'>
-			{/* eslint-disable-next-line @next/next/no-img-element */}
-			{/* <img src='/img/produk.png' alt='' /> */}
-			<Image src='/img/borobudur.jpg' alt='' layout='fill' objectFit='cover' />
+		<div className='card-product relative w-[300px] h-[400px] rounded-lg overflow-y-hidden mt-24'>
+			<Image src={image} alt='' layout='fill' objectFit='cover' />
 			<div className='detail-product p-4'>
 				<div className='flex justify-between items-center'>
 					<h4 className='px-6 py-1 text-base bg-primary-500 rounded-md text-white font-semibold'>

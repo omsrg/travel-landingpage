@@ -1,13 +1,13 @@
 import * as React from 'react';
 import Section from '../Section';
-import SectionHeading from '../section-heading';
-import Service from './service';
-import ServicesItem from './ServicesItem';
+import SectionHeading from '../SectionHeading';
+import Service from './Product';
+import ServicesItem from './ServicesProducts';
 
 export default function Services() {
 	return (
 		<Section>
-			<div className='container service-wrapper'>
+			<div className='mt-20' id='services'>
 				<div className='text-center'>
 					<SectionHeading
 						title='what we serve'

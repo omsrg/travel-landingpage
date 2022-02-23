@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Section from '../Section';
-import SectionHeading from '../section-heading';
+import SectionHeading from '../SectionHeading';
 import ProductCard from './ProductCard';
 import ProductsItems from './ProductsItems';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -13,7 +13,7 @@ import 'swiper/css/pagination';
 export default function Products() {
 	return (
 		<Section>
-			<div className='mt-20'>
+			<div className='mt-20' id='pricing'>
 				<div className='flex justify-between items-center'>
 					<div className='title-produk' data-aos='fade-right'>
 						<SectionHeading title='Top destination' heading='Explore Top Destination' />
@@ -30,8 +30,6 @@ export default function Products() {
 						spaceBetween={30}
 						slidesPerView={4}
 						loop={true}
-						// slidesPerGroup={3}
-						// loopFillGroupWithBlank={true}
 						autoplay={{
 							delay: 3000,
 							disableOnInteraction: false,
@@ -40,74 +38,63 @@ export default function Products() {
 							clickable: true,
 						}}
 					>
-						<SwiperSlide>
-							<ProductCard
-								category='Beach'
-								price={100}
-								location='Kuta, Indonesia'
-								description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui
-								nesciunt totam vel nihil id est corporis voluptatum sunt.'
-							/>
-						</SwiperSlide>
-
-						<SwiperSlide>
-							<ProductCard
-								category='Building'
-								price={250}
-								location='Bangkok, Thailand'
-								description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui
-								nesciunt totam vel nihil id est corporis voluptatum sunt.'
-							/>
-						</SwiperSlide>
-
-						<SwiperSlide>
-							<ProductCard
-								category='Beach'
-								price={300}
-								location='Yogyakarta, Indonesia'
-								description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui
-								nesciunt totam vel nihil id est corporis voluptatum sunt.'
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<ProductCard
-								category='Beach'
-								price={400}
-								location='Yogyakarta, Indonesia'
-								description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui
-								nesciunt totam vel nihil id est corporis voluptatum sunt.'
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<ProductCard
-								category='Beach'
-								price={500}
-								location='Yogyakarta, Indonesia'
-								description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui
-								nesciunt totam vel nihil id est corporis voluptatum sunt.'
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<ProductCard
-								category='Beach'
-								price={600}
-								location='Yogyakarta, Indonesia'
-								description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui
-								nesciunt totam vel nihil id est corporis voluptatum sunt.'
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<ProductCard
-								category='Beach'
-								price={700}
-								location='Yogyakarta, Indonesia'
-								description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui
-								nesciunt totam vel nihil id est corporis voluptatum sunt.'
-							/>
-						</SwiperSlide>
+						{ProductCards.map((item, idx) => (
+							<SwiperSlide key={idx}>
+								<ProductCard
+									category={item.category}
+									price={item.price}
+									location={item.location}
+									image={item.image}
+									description={item.description}
+								/>
+							</SwiperSlide>
+						))}
 					</Swiper>
 				</ProductsItems>
 			</div>
 		</Section>
 	);
 }
+
+const ProductCards = [
+	{
+		category: 'beach',
+		price: 299,
+		location: 'Kuta, Indonesia',
+		image: '/img/kuta.jpg',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui	nesciunt totam vel nihil id est corporis voluptatum sunt.',
+	},
+	{
+		category: 'beach',
+		price: 499,
+		location: 'Raja Ampat, Indonesia',
+		image: '/img/raja-ampat.jpg',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui	nesciunt totam vel nihil id est corporis voluptatum sunt.',
+	},
+	{
+		category: 'building',
+		price: 299,
+		location: 'Yogyakarta, Indonesia',
+		image: '/img/borobudur.jpg',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui	nesciunt totam vel nihil id est corporis voluptatum sunt.',
+	},
+	{
+		category: 'snow',
+		price: 699,
+		location: 'Zermatt, Swiss',
+		image: '/img/zermat-swiss.jpg',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui	nesciunt totam vel nihil id est corporis voluptatum sunt.',
+	},
+	{
+		category: 'beach',
+		price: 399,
+		location: 'Lombok, Indonesia',
+		image: '/img/lombok.jpg',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui	nesciunt totam vel nihil id est corporis voluptatum sunt.',
+	},
+];
