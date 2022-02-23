@@ -24,9 +24,8 @@ export default function Footer() {
 					</div>
 
 					<div className='text-black font-opensans'>
-						<p className='font-semibold'>
-							Ompi T Siregar &copy; {new Date().getFullYear()}.<p>Made with ❤️ by Ompi.</p>
-						</p>
+						<p className='font-semibold'>Ompi T Siregar &copy; {new Date().getFullYear()}.</p>
+						<p className='font-semibold'>Made with ❤️ by Ompi.</p>
 						<p className='py-2 text-sm'>Designed by Mardha Mardiya</p>
 					</div>
 				</div>
