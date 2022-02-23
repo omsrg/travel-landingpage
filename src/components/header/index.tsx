@@ -17,7 +17,7 @@ export default function Header() {
 				</UnstyledLink>
 			</div>
 
-			<nav className='flex items-center'>
+			<nav className='md:flex items-center hidden'>
 				<ul className='flex items-center '>
 					{links.map(({ href, label }) => (
 						<li

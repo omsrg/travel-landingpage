@@ -17,10 +17,18 @@ export default function Footer() {
 						The best service to customers is our top priority in building a business
 					</p>
 					<div className='flex space-x-4 my-8 text-secondary-500'>
-						<AiFillInstagram className='w-10 h-10' />
-						<AiOutlineWhatsApp className='w-10 h-10' />
-						<BsFacebook className='w-9 h-9' />
-						<AiFillTwitterCircle className='w-10 h-10' />
+						<UnstyledLink href='#'>
+							<AiFillInstagram className='w-10 h-10 hover:text-secondary-400' />
+						</UnstyledLink>
+						<UnstyledLink href='#'>
+							<AiOutlineWhatsApp className='w-10 h-10  hover:text-secondary-400' />
+						</UnstyledLink>
+						<UnstyledLink href='#'>
+							<BsFacebook className='w-9 h-9  hover:text-secondary-400' />
+						</UnstyledLink>
+						<UnstyledLink href='#'>
+							<AiFillTwitterCircle className='w-10 h-10  hover:text-secondary-400' />
+						</UnstyledLink>
 					</div>
 
 					<div className='text-black font-opensans'>
