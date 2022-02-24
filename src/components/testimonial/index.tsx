@@ -14,8 +14,8 @@ import 'swiper/css/pagination';
 export default function Testimonial() {
 	return (
 		<Section>
-			<div className='grid grid-cols-12 gap-6 py-40'>
-				<div className='col-span-5' data-aos='fade-right'>
+			<div className='md:grid md:grid-cols-12 md:gap-6 my-20 md:y-32'>
+				<div className='  md:col-span-5' data-aos='fade-right'>
 					<SectionHeading
 						title='what they said ?'
 						heading='What customers say about their experience with us'
@@ -26,29 +26,41 @@ export default function Testimonial() {
 					/>
 				</div>
 
-				<div className='col-start-7 col-span-6' data-aos='fade-left '>
-					<TestimoniSection>
-						<Swiper
-							modules={[Autoplay, Pagination, Navigation]}
-							spaceBetween={30}
-							slidesPerView={1}
-							loop={true}
-							navigation={true}
-							autoplay={{
-								delay: 4000,
-								disableOnInteraction: false,
-							}}
-							pagination={{
-								clickable: true,
-							}}
-						>
-							<SwiperSlide>
-								<TestimoniCard name='Lindsey' job='Traveller' image='/img/person-1.jpg' />
-							</SwiperSlide>
-							<SwiperSlide>
-								<TestimoniCard name='Anitha' job='Influencer' image='/img/person-2.jpg' />
-							</SwiperSlide>
-							<SwiperSlide>
+				<div className=' bg-pink-500 fle justify-center md:col-start-7 md:col-span-6 mt-10'>
+					{/* <TestimoniSection> */}
+					<Swiper
+						modules={[Autoplay, Pagination, Navigation]}
+						spaceBetween={50}
+						centeredSlides={true}
+						// loop={true}
+						// navigation={true}
+						autoplay={{
+							delay: 4000,
+							disableOnInteraction: false,
+						}}
+						pagination={{
+							clickable: true,
+						}}
+						// breakpoints={{
+						// 	// when window width is >= 640px
+						// 	640: {
+						// 		width: 640,
+						// 		slidesPerView: 1,
+						// 	},
+						// 	// when window width is >= 768px
+						// 	768: {
+						// 		width: 768,
+						// 		slidesPerView: 1,
+						// 	},
+						// }}
+					>
+						<SwiperSlide>
+							<TestimoniCard name='Lindsey' job='Traveller' image='/img/person-1.jpg' />
+						</SwiperSlide>
+						<SwiperSlide>
+							<TestimoniCard name='Anitha' job='Influencer' image='/img/person-2.jpg' />
+						</SwiperSlide>
+						{/* <SwiperSlide>
 								<TestimoniCard
 									name='Jonathan Larry'
 									job='Product Manager'
@@ -64,9 +76,9 @@ export default function Testimonial() {
 							</SwiperSlide>
 							<SwiperSlide>
 								<TestimoniCard name='Jelitha Amira' job='Traveller' image='/img/person-5.jpg' />
-							</SwiperSlide>
-						</Swiper>
-					</TestimoniSection>
+							</SwiperSlide> */}
+					</Swiper>
+					{/* </TestimoniSection> */}
 				</div>
 			</div>
 		</Section>

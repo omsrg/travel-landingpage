@@ -20,7 +20,7 @@ export default function ProductCard({
 	image,
 }: IProductCard) {
 	return (
-		<div className='card-product relative w-[300px] h-[400px] rounded-lg overflow-y-hidden mt-24'>
+		<div className='card-product relative w-[300px] h-[400px] rounded-lg mt-24 text-center'>
 			<Image src={image} alt='' layout='fill' objectFit='cover' />
 			<div className='detail-product p-4'>
 				<div className='flex justify-between items-center'>

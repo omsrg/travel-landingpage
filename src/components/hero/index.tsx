@@ -9,7 +9,7 @@ import InputDate from './FormInput/InputDate';
 export default function Hero() {
 	return (
 		<Section>
-			<div className='grid grid-cols-12 gap-4 py-8'>
+			<div className='grid md:grid-cols-12 gap-4 my-10'>
 				<div className='col-span-6'>
 					<h1 className='text-5xl text-secondary-500'>
 						Make Your Trip Memorable Book With Tour
@@ -41,7 +41,7 @@ export default function Hero() {
 					</p>
 				</div>
 
-				<div className='col-span-6'>
+				<div className='hidden md:block col-span-6'>
 					<Image
 						src='/img/hero-tavel.png'
 						alt=''

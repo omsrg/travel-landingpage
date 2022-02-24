@@ -7,9 +7,9 @@ import FooterColumn from './FooterColumn';
 
 export default function Footer() {
 	return (
-		<footer className='max-w-screen-2xl w-11/12 mx-auto mt-40 mb-20' id='footer'>
-			<div className='grid grid-cols-12 text-black'>
-				<div className='col-span-4'>
+		<footer className='max-w-screen-2xl w-11/12 mx-auto mt-40 ' id='footer'>
+			<div className='grid md:grid-cols-12 text-black'>
+				<div className='md:col-span-4'>
 					<h1 className='text-5xl text-secondary-500'>
 						Tour<span className='text-3xl text-primary-500'>avel.</span>
 					</h1>
@@ -38,7 +38,7 @@ export default function Footer() {
 					</div>
 				</div>
 
-				<div className=' col-start-6 col-span-7 flex space-x-12'>
+				<div className='md:col-start-6 md:col-span-7 mt-8 flex flex-wrap space-x-12'>
 					<FooterColumn groupTitle='About'>
 						<UnstyledLink href='#'>About us</UnstyledLink>
 						<UnstyledLink href='#'>Features</UnstyledLink>
@@ -61,7 +61,7 @@ export default function Footer() {
 						<UnstyledLink href='#'>Accessbility</UnstyledLink>
 					</FooterColumn>
 
-					<FooterColumn groupTitle='Get in touch' className='grow'>
+					<FooterColumn groupTitle='Get in touch' className='grow hidden xl:block'>
 						<p>Questions or Feedback</p>
 						<div className='relative flex items-center w-full'>
 							<input

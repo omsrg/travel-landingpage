@@ -27,8 +27,9 @@ export default function Products() {
 				<ProductsItems>
 					<Swiper
 						modules={[Autoplay, Pagination]}
-						spaceBetween={30}
-						slidesPerView={4}
+						spaceBetween={5}
+						slidesPerView={1}
+						centeredSlides={true}
 						loop={true}
 						autoplay={{
 							delay: 3000,
@@ -36,6 +37,17 @@ export default function Products() {
 						}}
 						pagination={{
 							clickable: true,
+						}}
+						breakpoints={{
+							640: {
+								slidesPerView: 2,
+								spaceBetween: 30,
+							},
+
+							1024: {
+								slidesPerView: 3,
+								spaceBetween: 30,
+							},
 						}}
 					>
 						{ProductCards.map((item, idx) => (

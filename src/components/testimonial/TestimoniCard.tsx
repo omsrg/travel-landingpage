@@ -10,7 +10,7 @@ type CardProps = {
 
 export default function TestimoniCard({ name, job, image }: CardProps) {
 	return (
-		<div className='bg-white font-opensans px-8 pt-6 pb-10 text-center rounded-lg'>
+		<div className='bg-white font-opensans p-8 pt-6 pb-10 text-center rounded-xl'>
 			{/* <div className='bg-pink-500 w-28 h-28 text-center rounded-full'> */}
 			<Image
 				src={image}
