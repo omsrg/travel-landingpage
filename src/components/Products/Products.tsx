@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Section from '../Section';
 import SectionHeading from '../SectionHeading/SectionHeading';
-import ProductCard from './ProductCard';
-import ProductsItems from './ProductsItems';
+import ProductCard from '@/components/products/ProductCard';
+import ProductsItems from '@/components/products/ProductsItems';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper';
 // Import Swiper styles
