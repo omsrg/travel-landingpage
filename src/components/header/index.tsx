@@ -3,7 +3,6 @@ import UnstyledLink from '../UnstyledLink';
 import { GrClose } from 'react-icons/gr';
 import { CgMenuRight } from 'react-icons/cg';
 import NavLinks from './NavLinks';
-import MobileNavigation from './MobileNavigation';
 
 type HeaderProps = {
 	isOpen: boolean;
