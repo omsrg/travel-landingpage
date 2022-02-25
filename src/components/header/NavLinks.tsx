@@ -14,7 +14,7 @@ export default function NavLinks() {
 				<li
 					key={`${href}${label}`}
 					// className='px-5 text-secondary-500 font-bold hover:text-primary-500'
-					className={`px-5  font-bold hover:text-primary-500 ${
+					className={`px-3 lg:px-5 font-bold hover:text-primary-500 ${
 						baseRoute === href ? 'text-primary-500' : 'text-secondary-500'
 					}`}
 				>
@@ -22,8 +22,10 @@ export default function NavLinks() {
 				</li>
 			))}
 
-			<div className='pl-5'>
-				<Button className='px-6 py-4 rounded-full text-lg font-bold'>Member area</Button>
+			<div className='pl-3 lg:pl-5'>
+				<Button className='px-3 py-2  lg:px-6 lg:py-4 rounded-full text-sm lg:text-lg font-bold'>
+					Member area
+				</Button>
 			</div>
 		</>
 	);

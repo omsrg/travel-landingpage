@@ -21,7 +21,7 @@ export default function ProductCard({
 }: IProductCard) {
 	return (
 		<div className='card-product relative w-[300px] h-[400px] rounded-lg mt-24 text-center'>
-			<Image src={image} alt='' layout='fill' objectFit='cover' />
+			<Image src={image} alt='' layout='fill' objectFit='cover' className='rounded-lg' />
 			<div className='detail-product p-4'>
 				<div className='flex justify-between items-center'>
 					<h4 className='px-6 py-1 text-base bg-primary-500 rounded-md text-white font-semibold'>

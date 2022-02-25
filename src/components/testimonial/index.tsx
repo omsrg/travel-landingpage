@@ -26,7 +26,7 @@ export default function Testimonial() {
 					/>
 				</div>
 
-				<div className=' bg-pink-500 fle justify-center md:col-start-7 md:col-span-6 mt-10'>
+				<div className='md:col-start-7 md:col-span-6 mt-10'>
 					{/* <TestimoniSection> */}
 					<Swiper
 						modules={[Autoplay, Pagination, Navigation]}
@@ -60,23 +60,23 @@ export default function Testimonial() {
 						<SwiperSlide>
 							<TestimoniCard name='Anitha' job='Influencer' image='/img/person-2.jpg' />
 						</SwiperSlide>
-						{/* <SwiperSlide>
-								<TestimoniCard
-									name='Jonathan Larry'
-									job='Product Manager'
-									image='/img/person-3.jpg'
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<TestimoniCard
-									name='Oliver Braithwaite'
-									job='Photographer'
-									image='/img/person-4.jpg'
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<TestimoniCard name='Jelitha Amira' job='Traveller' image='/img/person-5.jpg' />
-							</SwiperSlide> */}
+						<SwiperSlide>
+							<TestimoniCard
+								name='Jonathan Larry'
+								job='Product Manager'
+								image='/img/person-3.jpg'
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<TestimoniCard
+								name='Oliver Braithwaite'
+								job='Photographer'
+								image='/img/person-4.jpg'
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<TestimoniCard name='Jelitha Amira' job='Traveller' image='/img/person-5.jpg' />
+						</SwiperSlide>
 					</Swiper>
 					{/* </TestimoniSection> */}
 				</div>

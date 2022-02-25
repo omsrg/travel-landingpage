@@ -5,7 +5,7 @@ export default function InputDate() {
 	return (
 		<div className='flex w flex-col tems-center'>
 			<p className='mb-1 text-tundora-400'>Date</p>
-			<input type='date' className='px-2 py- w-max font-bold rounded-md focus:ring-0 border-0' />
+			<input type='date' className='px-2 py- w-full font-bold rounded-md focus:ring-0 border-0' />
 		</div>
 	);
 }
