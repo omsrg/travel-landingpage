@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Section from '../Section';
-import SectionHeading from '../SectionHeading';
+import SectionHeading from '../SectionHeading/SectionHeading';
 import TestimoniSection from './TestimoniSection';
 import TestimoniCard from './TestimoniCard';
 
