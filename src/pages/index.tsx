@@ -3,12 +3,12 @@ import Head from 'next/head';
 
 import Hero from '@/components/hero/Hero';
 import Services from '@/components/services/Services';
+import Layout from '@/components/layout/Layout';
 import Products from '@/components/products/Products';
 import BannerFirst from '@/components/banner/banner-first/BannerFirst';
 import Statistic from '@/components/statistic/Statistic';
 import Testimonial from '@/components/testimonial/Testimonial';
 import BannerSecond from '@/components/banner/banner-second/BannerSecond';
-import Layout from '@/components/layout/Layout';
 
 const HomePage: NextPage = () => {
 	return (
