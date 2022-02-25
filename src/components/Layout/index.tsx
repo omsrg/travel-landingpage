@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Footer from '../Footer';
-import Header from '../Header/Header';
+import Footer from '@/components/Footer/index';
+import Header from '@/components/Header/Header';
 import MobileNavigation from '../Header/MobileNavigation';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
