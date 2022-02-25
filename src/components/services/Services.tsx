@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Section from '../Section';
 import SectionHeading from '../SectionHeading/SectionHeading';
-import Service from './Product';
-import ServicesItem from './ServicesProducts';
+import Service from './Service';
+import ServicesItem from './ServicesItems';
 
 export default function Services() {
 	return (

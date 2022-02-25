@@ -13,7 +13,6 @@ export default function NavLinks() {
 			{links.map(({ href, label }) => (
 				<li
 					key={`${href}${label}`}
-					// className='px-5 text-secondary-500 font-bold hover:text-primary-500'
 					className={`px-3 lg:px-5 font-bold hover:text-primary-500 ${
 						baseRoute === href ? 'text-primary-500' : 'text-secondary-500'
 					}`}

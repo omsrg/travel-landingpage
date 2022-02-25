@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Section from '../Section';
 import SectionHeading from '../SectionHeading/SectionHeading';
-import TestimoniSection from './TestimoniSection';
 import TestimoniCard from './TestimoniCard';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -27,7 +26,6 @@ export default function Testimonial() {
 				</div>
 
 				<div className='md:col-start-7 md:col-span-6 mt-10'>
-					{/* <TestimoniSection> */}
 					<Swiper
 						modules={[Autoplay, Pagination, Navigation]}
 						spaceBetween={50}
@@ -78,7 +76,6 @@ export default function Testimonial() {
 							<TestimoniCard name='Jelitha Amira' job='Traveller' image='/img/person-5.jpg' />
 						</SwiperSlide>
 					</Swiper>
-					{/* </TestimoniSection> */}
 				</div>
 			</div>
 		</Section>
