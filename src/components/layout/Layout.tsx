@@ -6,6 +6,11 @@ import MobileNavigation from '../header/MobileNavigation';
 export default function Layout({ children }: { children: React.ReactNode }) {
 	const [isOpen, setIsOpen] = React.useState<boolean>(false);
 
+	React.useEffect(() => {
+		if (isOpen) document.body.style.overflow = 'hidden';
+		else document.body.style.overflow = 'unset';
+	}, [isOpen]);
+
 	const mobileNavHandler = () => {
 		setIsOpen((prevState) => !prevState);
 	};

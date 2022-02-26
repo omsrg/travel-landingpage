@@ -38,22 +38,22 @@ export default function Footer() {
 					</div>
 				</div>
 
-				<div className='md:col-start-6 md:col-span-7 mt-8 flex flex-wrap space-x-12'>
-					<FooterColumn groupTitle='About'>
+				<div className='md:col-start-6 md:col-span-7 mt-8 flex flex-wrap'>
+					<FooterColumn groupTitle='About' className='mr-8 md:mr-12'>
 						<UnstyledLink href='#'>About us</UnstyledLink>
 						<UnstyledLink href='#'>Features</UnstyledLink>
 						<UnstyledLink href='#'>News</UnstyledLink>
 						<UnstyledLink href='#'>Menu</UnstyledLink>
 					</FooterColumn>
 
-					<FooterColumn groupTitle='Company'>
+					<FooterColumn groupTitle='Company' className='mr-8 md:mr-12'>
 						<UnstyledLink href='#'>Why Touravel ?</UnstyledLink>
 						<UnstyledLink href='#'>Partners with us</UnstyledLink>
 						<UnstyledLink href='#'>FAQ</UnstyledLink>
 						<UnstyledLink href='#'>Blogs</UnstyledLink>
 					</FooterColumn>
 
-					<FooterColumn groupTitle='Support'>
+					<FooterColumn groupTitle='Support' className='mr-8 md:mr-12'>
 						<UnstyledLink href='#'>Account</UnstyledLink>
 						<UnstyledLink href='#'>Support Center</UnstyledLink>
 						<UnstyledLink href='#'>Feedback</UnstyledLink>
@@ -61,7 +61,7 @@ export default function Footer() {
 						<UnstyledLink href='#'>Accessbility</UnstyledLink>
 					</FooterColumn>
 
-					<FooterColumn groupTitle='Get in touch' className='grow hidden xl:block'>
+					<FooterColumn groupTitle='Get in touch' className='grow '>
 						<p>Questions or Feedback</p>
 						<div className='relative flex items-center w-full'>
 							<input
